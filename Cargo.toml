@@ -19,7 +19,7 @@ path = "interface/src/lib.rs"
 [dependencies]
 spl-pod = { git = "https://github.com/hamkj7hpo/spl-pod.git", branch = "safe-pump-compat" }
 solana-program = { git = "https://github.com/hamkj7hpo/solana.git", branch = "safe-pump-compat" }
-spl-discriminator = "0.4.1"
+spl-discriminator = { git = "https://github.com/hamkj7hpo/solana-program-library.git", branch = "safe-pump-compat", package = "spl-discriminator" }
 spl-program-error = "0.4.2"
 bytemuck = { version = "1.17.1", features = ["derive"] }
 
