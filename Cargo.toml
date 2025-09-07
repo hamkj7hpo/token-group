@@ -22,3 +22,6 @@ solana-program = { git = "https://github.com/hamkj7hpo/solana.git", branch = "sa
 spl-discriminator = "0.4.1"
 spl-program-error = "0.4.2"
 bytemuck = { version = "1.17.1", features = ["derive"] }
+
+[patch.crates-io]
+zeroize = "1.3.0"
