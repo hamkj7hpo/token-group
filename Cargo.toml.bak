@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+members = [
+  "interface",
+  "program",
+]
+
+[package]
+name = "spl-token-group-interface"
+version = "0.2.4"
+authors = ["Anza Maintainers <maintainers@anza.xyz>"]
+license = "Apache-2.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+path = "interface/src/lib.rs"
+
+[dependencies]
+spl-pod = { git = "https://github.com/hamkj7hpo/spl-pod.git", branch = "safe-pump-compat" }
+solana-program = { path = "/tmp/deps/solana/sdk/program", features = ["solana_program_zeroize"] }
+spl-discriminator = { git = "https://github.com/hamkj7hpo/solana-program-library.git", branch = "safe-pump-compat", package = "spl-discriminator" }
+spl-program-error = "0.4.2"
+bytemuck = { version = "1.17.1", features = ["derive"] }
+
